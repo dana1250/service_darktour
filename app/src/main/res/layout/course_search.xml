@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코스 탐색 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="horizontal"/>
+        <TextView
+            android:id="@+id/review_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="코스 탐색"
+            android:textSize="25dp"
+            android:layout_weight="20"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- 토글 스위치 -->
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="23"
+            android:text="AI 추천"
+            android:textColor="#696F79"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:id="@+id/ai_switch"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="26"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal"/>
+
+        <!-- 지역 선택 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_rectangle"
+            android:id="@+id/selection_layout"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#829DAE"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="26"
+            android:textStyle="bold"
+            android:text="지역 선택"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 지역 선택 커스텀 스피너-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="10"
+            android:spinnerMode="dropdown"
+            android:id = "@+id/spinner_1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/white"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+    <!-- 위쪽 공간이 좁아서 간격 주기위해서 넣음 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="27"
+        android:background="@color/white"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="26"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal"/>
+
+        <!-- 교통 선택 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_rectangle"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#829DAE"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="26"
+                android:textStyle="bold"
+                android:text="교통 선택"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 교통 선택 커스텀 스피너-->
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="10"
+                android:spinnerMode="dropdown"
+                android:id = "@+id/spinner_2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/white"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="26"/>
+
+    <!-- 하단 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_weight="12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal"/>
+        <!-- 검색 및 recyclerview -->
+
+        <LinearLayout
+            android:id="@+id/search_and_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/input_rectangle">
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_input_search"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:textColorHint="#829DAE"
+                android:backgroundTint = "#A9A9A9"
+                android:textCursorDrawable="@drawable/search_cursor"
+                android:hint="유적지 검색"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/site_recycler"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+
+
+    <com.github.edsergeev.TextFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="5dp"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_draft_n_black"
+        app:backgroundTint="@color/white"
+        app:useCompatPadding="true"
+        tools:ignore="smallSp"
+        app:text_x_offset="7dp"
+        app:text_y_offset="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

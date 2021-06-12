@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 리뷰 화면 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/review_item_back_line">
+
+    <!-- id -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag"
+            android:text="코스"
+            android:textAlignment="center"
+            android:layout_weight="7"
+            android:textColor="#fff"
+            android:background="#8EC0E4"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="10dp"
+            android:text="id"
+            android:textSize="13sp"
+            android:id="@+id/user_id"/>
+
+    </LinearLayout>
+    <!-- content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/review_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/user_review"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+    <!-- 코스 or 유적지 이름 and 좋아요 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/darker_gray"
+        android:layout_weight="1"
+        android:text="유적지 or 코스 이름 !!"
+        android:id="@+id/title"
+        />
+        </LinearLayout>
+
+    <!-- 좋아요 버튼 & 수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/like"
+        android:orientation="horizontal">
+        <!-- 리뷰 사진 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+        <!--좋아요-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="top|right"
+            android:background="#fff"
+            android:id="@+id/thumb_button"
+            app:srcCompat="@drawable/thumbs_up"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="#000000"
+            android:gravity="center_vertical|left"
+            android:id="@+id/thumb_count" />
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

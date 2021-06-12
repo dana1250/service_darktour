@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/touch_back"
+    android:layout_marginTop="5dp"
+
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_plane"
+
+        android:layout_weight="12"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical|left"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+
+        android:textStyle="bold"
+        android:textColor="#16056B"
+        android:id="@+id/content"/>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="12"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginRight="5dp"
+        android:text="이동" />
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--회원가입 화면-->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--Sign Up_text 위의 빈 뷰-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <!--Sign Up_text를 포함하는 뷰-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+            <!--Sign Up_text 앞의 빈 뷰-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <!--Sign Up_text-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:text="관심유적지"
+                android:textAppearance="@style/login" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--Sign Up_text 아래의 빈 뷰-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03" />
+
+        <!--관심있는 사건을 선택해주세요!를 포함하는 뷰-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+            <!--관심있는 사건을 선택해주세요!_text 앞의 빈 뷰-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <!--관심있는 사건을 선택해주세요!_text-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="12"
+                android:text="관심있는 사건을 선택해주세요! (2개 이상, 5개 이하)"
+                android:textAppearance="@style/login_ready" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--회색 선-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+            <!--회색 선 앞의 빈 뷰-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <!--얇은 회색 선-->
+            <ImageView
+                android:id="@+id/line_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:src="@drawable/line" />
+            <!--회색 선 뒤의 빈 뷰-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/completed_bt"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/his_seoul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울 유적지"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/history_recycler_seoul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06" />
+
+                <TextView
+                    android:id="@+id/his_jeju"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="제주 유적지"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/history_recycler_jeju"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06" />
+
+                <TextView
+                    android:id="@+id/his_busan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="부산 유적지"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/history_recycler_busan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.0015" />
+            <!--회원가입 버튼-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+                <!--회원가입 버튼 앞의 빈 뷰-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <!--회원가입 버튼-->
+                <Button
+                    android:id="@+id/completed_bt"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/signup_rectangle"
+                    android:text="선택완료"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+                <!--회원가입 버튼 뒤의 빈 뷰-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.0015" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

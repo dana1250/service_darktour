@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item> <shape> <padding android:top="5px" android:right="5px" android:bottom="5px" android:left="5px" /> <corners android:radius="0px" /> <solid android:color="#DBDBDB" /> </shape> </item>
+
+    <!-- Background -->
+    <item> <shape> <solid android:color="#ffffff" /> <corners android:radius="0px" /> </shape> </item>
+</layer-list>

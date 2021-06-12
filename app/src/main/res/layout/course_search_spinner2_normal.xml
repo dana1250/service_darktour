@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코스 검색 교통선택 spinner 커스텀 기본 화면 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spinnerTrans"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_weight="6"
+        android:text="대중교통"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:scaleType="centerInside"
+        android:layout_weight="7"
+        android:id="@+id/img"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:src="@drawable/ic_arrow_drop"
+        android:scaleType="centerInside"
+        android:layout_weight="6"
+        android:layout_gravity="right"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
+
+

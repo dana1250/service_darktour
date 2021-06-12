@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코스 검색 교통선택 spinner 커스텀 dropdown 화면 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spinnerTrans"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="left|center_vertical"
+        android:text="교통"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</LinearLayout>
+
+

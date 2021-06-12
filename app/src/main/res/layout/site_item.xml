@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 유적지 itme 화면 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/background_change"
+        android:background="@drawable/write_review_back"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:orientation="vertical"/>
+        <!-- 리뷰 사진 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_weight="3.5"
+            android:src="@drawable/ic_no_image"
+            android:background="@drawable/background_rounding"
+            android:id="@+id/image" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:orientation="vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <!-- 유적지 이름 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/title"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#16056B"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="유적지 이름 "/>
+            <!-- 유적지 설명 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:text="유적지 설명 "/>
+        </LinearLayout>
+        <!--좋아요-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_weight="3"
+                android:textSize = "10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/accident"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="top|right"
+                    android:background="#00ff0000"
+                    android:id="@+id/thumb_button"
+                    app:srcCompat="@drawable/ic_baseline_favorite_"/>
+                <!-- 좋아요 숫자 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/thumb_count" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

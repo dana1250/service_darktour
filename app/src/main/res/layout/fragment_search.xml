@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="57"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="70" />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="20"
+            android:drawableLeft="@drawable/mini"
+            android:drawablePadding="10dp"
+            android:ems="1"
+            android:enabled="true"
+            android:hint="검색어를 입력하세요"
+            android:inputType="text"
+            android:paddingRight="100dp"
+            android:backgroundTint="#8EC0E4"
+            />
+
+        <Button
+            android:id="@+id/searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="검색"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_drawable"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="70" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="700"
+        android:divider="#8EC0E4"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+</LinearLayout>
+
+

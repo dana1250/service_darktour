@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코스 검색 지역선택 spinner 커스텀 기본 화면 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spinnerLocation"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_weight="3"
+        android:text="지역"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"/>
+    <ImageView
+        android:src="@drawable/ic_arrow_drop"
+        android:scaleType="centerInside"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
+
+

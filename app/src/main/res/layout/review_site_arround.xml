@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 윤지 유적지 코스 리뷰  유적지에 대한 리뷰가 궁금하신가요? 리뷰 or 코스에 대한 리뷰가 궁금하신가요? 리뷰-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <!-- 상단부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/topdropshadow"
+        android:orientation="vertical">
+
+
+        <!-- 지역을 선택하세요! linearlayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <!-- 위쪽 공간이 좁아서 간격 주기위해서 넣음 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:autoSizeMaxTextSize ="30dp"
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/his_name_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 하단 부분 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+
+
+</LinearLayout>

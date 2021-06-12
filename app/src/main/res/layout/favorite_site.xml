@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 윤지 코스선택 확정 레이아웃 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/topdropshadow"
+        android:orientation="vertical">
+
+        <!-- 코스선택 linearlayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <!-- 위쪽 공간이 좁아서 간격 주기위해서 넣음 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="20">
+                <!-- 뒤로가기 버튼 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:onClick="back_button_click"
+                    android:layout_weight="15">
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="35dp"
+                        android:background="#00000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow_black" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:text="  Back"
+                        android:textColor="#000"
+                        android:textSize="23dp" />
+                </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="코스 선택"
+                android:layout_weight="9"
+                android:textAlignment="center"
+                android:textColor="#323232"
+                android:textSize="25dp"
+                android:gravity="center_horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="93"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/location"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:background="#fff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/transportation"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:background="#fff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ai"
+            android:textColor="#647C8C"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:background="#fff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="110"/>
+    <!-- 하단 부분 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_site_recycler"
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:alignmentMode="alignBounds" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="110"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_button_select_finish"
+        android:textColor="#fff"
+        android:id="@+id/select_finish"
+        android:text="선택완료"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="110"/>
+
+
+
+
+
+
+</LinearLayout>
